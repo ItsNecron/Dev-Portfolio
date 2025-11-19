@@ -14,9 +14,9 @@ const Hero: React.FC = () => {
   // Personal portfolio images
   // Note: Ensure these files are placed in the public folder
   const swiperImages = [
-    "public\\assets\\aest-1323.JPG",
-    "public\\assets\\aest-12323424.jpg", 
-    "public\\assets\\aest-123.jpg"
+    "/assets/aest-1323.JPG",
+    "/assets/aest-12323424.jpg", 
+    "/assets/aest-123.jpg"
   ].join(',');
 
   return (

@@ -95,12 +95,12 @@ const About: React.FC = () => {
           
           <div className="mt-8 grid grid-cols-2 gap-4">
             <img
-              src="public\\assets\\ctso-logo.jpg"
+              src="/assets/ctso-logo.jpg"
               alt="University Collaboration"
               className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full p-2 md:p-4 shadow-[0_0_15px_rgba(0,0,0,0.5)] border border-white/10 bg-white/5 grayscale hover:grayscale-0 transition-all duration-500"
             />
              <img
-              src="public\\assets\\national-university-philippines-seeklogo.png"
+              src="/assets/national-university-philippines-seeklogo.png"
               alt="University Campus"
               className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full p-2 md:p-4 shadow-[0_0_15px_rgba(0,0,0,0.5)] border border-white/10 bg-white/5 grayscale hover:grayscale-0 transition-all duration-500"
             />
