@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "../../lib/utils";
 
@@ -8,6 +8,7 @@ type Testimonial = {
   name: string;
   designation: string;
   src: string;
+  link?: string;
 };
 
 export const AnimatedTestimonials = ({
@@ -35,7 +36,7 @@ export const AnimatedTestimonials = ({
 
   useEffect(() => {
     if (autoplay) {
-      const interval = setInterval(handleNext, 5000);
+      const interval = setInterval(handleNext, 6500);
       return () => clearInterval(interval);
     }
   }, [autoplay]);
@@ -143,8 +144,22 @@ export const AnimatedTestimonials = ({
                 </motion.span>
               ))}
             </motion.p>
+            {testimonials[active].link && (
+              <motion.a
+                href={testimonials[active].link}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.3 }}
+                className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-brand-red hover:bg-brand-red/80 text-white font-display font-bold uppercase tracking-widest text-sm rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(220,38,38,0.5)]"
+              >
+                View Project
+                <ExternalLink className="w-4 h-4" />
+              </motion.a>
+            )}
           </motion.div>
-          <div className="flex gap-4 pt-12 md:pt-0">
+          <div className="flex gap-4 pt-8 md:pt-8 mt-8">
             <button
               onClick={handlePrev}
               className="h-10 w-10 rounded-full bg-white/5 hover:bg-brand-red border border-white/10 hover:border-brand-red flex items-center justify-center group/button transition-all duration-300"

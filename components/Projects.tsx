@@ -8,8 +8,8 @@ const projects: Project[] = [
     id: '1',
     title: 'PathLink',
     category: 'IoT Management System',
-    image: 'public\assets\pathlink-project.png',
-    description: 'An IoT-enabled management system. Led technical documentation and performed comprehensive QA testing, identifying bugs and ensuring UI responsiveness across devices.',
+    image: '/assets/pathlink-project.png',
+    description: 'IoT-enabled Car Rental Management Web Application System that streamlines vehicle tracking, rental processes, and user management through real-time data integration and an intuitive interface.',
     tags: ['TypeScript', 'PostgreSQL', 'IoT'],
     demoUrl: 'https://pathlinkio.app/'
   },
@@ -17,8 +17,8 @@ const projects: Project[] = [
     id: '2',
     title: 'BetterBee',
     category: 'Gamified Habit Tracker',
-    image: '/assets/betterbee-project.png',
-    description: 'A habit tracker built during a hackathon using Generative AI (Caffeine) to rapid prototype. Performed code review and UI refinement on AI-generated components.',
+    image: '/assets/BetterBee-project.png',
+    description: 'A gamified habit tracker application, developed using AI platform Caffeine AI during a hackathon. Incentivizes users to build positive habits through engaging game mechanics.',
     tags: ['React', 'Tailwind CSS', 'Caffeine AI'],
     demoUrl: 'https://betterbee-m7n.caffeine.xyz/'
   },
@@ -27,7 +27,7 @@ const projects: Project[] = [
     title: 'WiseTrack',
     category: 'POS System Architecture',
     image: '/assets/arya-kopi-project.png',
-    description: 'A dedicated POS system for a coffee shop. Led a team of 4, assisting in UI/UX design and front-end development while managing project milestones.',
+    description: 'A dedicated Point-of-Sale (POS) system for a local coffee shop. Uses modern web and mobile development frameworks to create a simple and user-friendly interface for efficient order processing and inventory management.',
     tags: ['Flutter', 'PostgreSQL', 'Team Lead'],
     demoUrl: 'https://github.com/Zen1thh/WiseGuys_Capstone/tree/dev-with-DB'
   }
@@ -39,7 +39,8 @@ const Projects: React.FC = () => {
     name: project.title,
     designation: project.category,
     quote: project.description,
-    src: project.image
+    src: project.image,
+    link: project.demoUrl
   }));
 
   return (

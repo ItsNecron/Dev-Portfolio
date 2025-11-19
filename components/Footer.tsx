@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
               <span className="text-brand-red">Connect</span>
             </h2>
             <p className="text-gray-400 max-w-md mb-8 text-lg">
-              Ready to leverage my skills in React, TypeScript, and Flutter for your next project? I am currently seeking internship opportunities.
+              Fueling your next project with fresh code and modern tech. I'm a Frontend Developer seeking an internship where I can make a tangible impact. Ready to deploy!".
             </p>
             
             <div className="space-y-4 mb-8">
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
                 className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors group"
               >
                 <Linkedin className="text-brand-red group-hover:scale-110 transition-transform" />
-                <span>LinkedIn Profile</span>
+                <span>My LinkedIn Profile</span>
               </a>
             </div>
 
