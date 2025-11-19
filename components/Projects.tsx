@@ -8,7 +8,7 @@ const projects: Project[] = [
     id: '1',
     title: 'PathLink',
     category: 'IoT Management System',
-    image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=2070&auto=format&fit=crop',
+    image: 'public\assets\pathlink-project.png',
     description: 'An IoT-enabled management system. Led technical documentation and performed comprehensive QA testing, identifying bugs and ensuring UI responsiveness across devices.',
     tags: ['TypeScript', 'PostgreSQL', 'IoT'],
     demoUrl: 'https://pathlinkio.app/'
@@ -17,7 +17,7 @@ const projects: Project[] = [
     id: '2',
     title: 'BetterBee',
     category: 'Gamified Habit Tracker',
-    image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop',
+    image: '/assets/betterbee-project.png',
     description: 'A habit tracker built during a hackathon using Generative AI (Caffeine) to rapid prototype. Performed code review and UI refinement on AI-generated components.',
     tags: ['React', 'Tailwind CSS', 'Caffeine AI'],
     demoUrl: 'https://betterbee-m7n.caffeine.xyz/'
@@ -26,10 +26,10 @@ const projects: Project[] = [
     id: '3',
     title: 'WiseTrack',
     category: 'POS System Architecture',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?q=80&w=2070&auto=format&fit=crop',
+    image: '/assets/arya-kopi-project.png',
     description: 'A dedicated POS system for a coffee shop. Led a team of 4, assisting in UI/UX design and front-end development while managing project milestones.',
     tags: ['Flutter', 'PostgreSQL', 'Team Lead'],
-    demoUrl: '#'
+    demoUrl: 'https://github.com/Zen1thh/WiseGuys_Capstone/tree/dev-with-DB'
   }
 ];
 
