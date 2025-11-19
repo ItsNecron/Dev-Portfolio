@@ -33,9 +33,11 @@ const Navbar: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-brand-red transform rotate-45 flex items-center justify-center">
-              <div className="w-4 h-4 bg-black transform -rotate-45" />
-            </div>
+            <img 
+              src="/assets/favicon.ico" 
+              alt="Elijah.dev Logo" 
+              className="w-8 h-8"
+            />
             <span className="font-display font-bold text-2xl tracking-tighter uppercase">
               ELIJAH<span className="text-brand-red">.DEV</span>
             </span>
